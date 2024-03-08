@@ -6,3 +6,16 @@
 .img-3{
     max-width: 180px;
 }
+
+.overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    min-height: 100vh;
+    backdrop-filter: blur(10px);
+}
+
+.hidden{
+    display: none;
+}
