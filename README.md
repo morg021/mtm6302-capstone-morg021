@@ -1,13 +1,20 @@
-# Design decisions
+# Report 
 
--I decided to use specific fonts, font sizes, color codes, and layout in the design, considering various factors such as aesthetics, readability, branding guidelines, and user experience considerations. Let's break down each aspect mentioned in your question:
+## Steps Taken
 
--Font Choices: I opted to use Algerian for the heading (H1) and Arial Regular for the content, which suggests a deliberate choice in typography. Algerian's decorative style evokes sophistication and prominence, while Arial Regular ensures clarity and simplicity in body text.
+-Planning: The prototype creation process began with thorough planning, including defining project goals, requirements, and scope. A project roadmap was developed to outline key milestones and deliverables.
 
--Font Sizes: I set the heading (H1) to size 30 and content to sizes 20, 22, and 24, indicating a hierarchical structure in the design. This hierarchy grabs attention with the larger heading while improving readability with varied content sizes.
+-Design: The design phase involved wireframing and prototyping using Figma, a collaborative design tool. Multiple design iterations were created to refine the user interface and incorporate feedback from stakeholders.
 
--Color Code: I chose the background color code #DBEADC, representing a specific shade of green. This color choice conveys emotions such as freshness, growth, or tranquility, depending on the design's context, enhancing its overall impact.
+-Development: Frontend development was carried out using HTML, CSS, and JavaScript. The prototype was built using responsive design principles to ensure compatibility across various devices and screen sizes. Development environment setup included the use of code editors such as Visual Studio Code and version control with Git.
 
--Layout: I created a compactable layout to ensure responsiveness and adaptability to different screen sizes or devices, guaranteeing a consistent user experience across platforms. Leaving space for an image grid accommodates multimedia elements like images, enhancing visual appeal and information conveyance.
+### Resources Used
 
--In summary, my design choices reflect a thoughtful approach to typography, color, and layout, aiming to create an aesthetically pleasing, readable, and user-friendly design that aligns with the project's goals and requirements.
+Design resources: Figma for wireframing and prototyping, UI kits, and design templates.
+Development resources: HTML, CSS, JavaScript, Bootstrap framework, online tutorials, and documentation.
+Collaboration tools: Slack for team communication, Trello for project management, and GitHub for version control and code collaboration.
+Challenges Faced
+
+Technical challenges: Implementing functionality using JavaScript.
+Design challenges: Balancing aesthetics with usability and ensuring consistency in design elements.
+Time constraints: Meeting project deadlines while addressing design and development challenges.
