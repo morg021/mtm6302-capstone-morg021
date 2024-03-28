@@ -39,10 +39,9 @@
   <h1 class="text-center p-1 m-auto">SEARCH NASA PICTURE OF THE DAY</h1>
 
   <div class="d-grid gap-2 col-2 mx-auto">
-    <form action="#" class="d-flex flex-column">
-      <input type="date"><br>
+    <form action="#" class="d-flex flex-column" id="dateSelectForm">
+      <input type="date" name="date" id="date"><br>
       <input class="btn btn-info btn-lg border-dark" type="submit" value="SEARCH">
-
     </form>
   </div>
 
@@ -59,12 +58,16 @@
       </div>
     </div>
   </div>
-  <div class="overlay hidden" id="overlay">
+  <div class="overlay" id="overlay">
     <div class="closeBtn" id="ovrlayCloseBtn">Close</div>
     <img src="/images/11861725206-3c032d701d-o-233_x_208.jpg" alt="logo" id="testimg">
     <p id="testp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta eveniet possimus nulla at earum
       inventore eligendi ipsum quibusdam molestias culpa quam modi beatae, accusamus eum odio doloribus velit ex
       officia.</p>
+      <button class="btn-save" id="saveBtn">save</button>
+  </div>
+  <div id="test">
+    <img src="" alt="" id="fullScreenImg">
   </div>
 
 
