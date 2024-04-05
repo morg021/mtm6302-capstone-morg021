@@ -50,7 +50,7 @@
   <div class="d-flex flex-column lg-3 flex-sm-row justify-content-center p-1 align-items-center">
 
     <div class="container-fluid text-center mb-3">
-      <div class="row row-cols-lg-4 justify-content-center">
+      <div class="row row-cols-lg-4 justify-content-center" id="gallery">
         <div class="col g-1 thumbnail"><img src="/images/nasaimage-320_x_240.jpeg" alt="logo" class="img-3"></div>
         <div class="col g-1 thumbnail"><img src="/images/nasaimage-320_x_240.jpeg" alt="logo" class="img-3"></div>
         <div class="col g-1 thumbnail"><img src="/images/nasaimage-320_x_240.jpeg" alt="logo" class="img-3"></div>
@@ -58,14 +58,14 @@
       </div>
     </div>
   </div>
-  <div class="overlay" id="overlay">
+
+  <!-- Image by details -->
+  <div class="overlay hidden" id="overlay">
     <div class="closeBtn" id="ovrlayCloseBtn">Close</div>
-    <img src="/images/11861725206-3c032d701d-o-233_x_208.jpg" alt="logo" id="testimg">
-    <p id="testp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta eveniet possimus nulla at earum
-      inventore eligendi ipsum quibusdam molestias culpa quam modi beatae, accusamus eum odio doloribus velit ex
-      officia.</p>
-      <button class="btn-save" id="saveBtn">save</button>
+    <div class="content" id="content"></div>
   </div>
+
+  <!-- FullScreen Image -->
   <div id="test">
     <img src="" alt="" id="fullScreenImg">
   </div>
