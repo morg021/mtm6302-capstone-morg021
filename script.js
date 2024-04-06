@@ -11,6 +11,17 @@ let activeImageData;
 
 
 
+// Code to clear saved images
+function clearSavedImages() {
+    savedImages = [];
+    localStorage.setItem('savedImages', JSON.stringify(savedImages));
+}
+
+// Call the function to clear saved images
+clearSavedImages();
+
+
+
 $thumbnails.forEach(element => {
     element.addEventListener('click', function(){     
         $overlay.classList.remove('hidden')
@@ -110,7 +121,22 @@ function renderGallery(){
     )
     $gallery.innerHTML = imagesToDisplay.join('')
 }
-renderGallery()
+renderGallery();
+
+
+
+
+  // Function to clear saved images
+  function clearSavedImages() {
+    let savedImages = []; // Define an empty array
+    localStorage.setItem('savedImages', JSON.stringify(savedImages)); // Save the empty array to local storage
+    console.log("Images cleared from local storage."); // Log a message to indicate successful clearing
+}
+
+// Event listener for the delete button
+document.getElementById('deleteButton').addEventListener('click', function() {
+    clearSavedImages(); // Call the function to clear saved images when the button is clicked
+});
 
 
 
