@@ -5,16 +5,20 @@ const $dateSelectForm = document.getElementById('dateSelectForm')
 const $deleteBtn = document.getElementById('deleteBtn')
 const $content = document.getElementById('content')
 const $gallery = document.getElementById('gallery')
+const $deleteButton = document.getElementById('deleteButton')
 const API_KEY = 'u1fXvoAx2Ss2DZ5U3jTToaA50xntNzVAZnFR8m0l'
 let savedImages = localStorage.getItem('savedImages') ? JSON.parse(localStorage.getItem('savedImages')) : []
 let activeImageData;
 
-
+$deleteButton.addEventListener('click' ,clearSavedImages )
 
 // Code to clear saved images
 function clearSavedImages() {
+    console.log('clear images...')
     savedImages = [];
     localStorage.setItem('savedImages', JSON.stringify(savedImages));
+    // renderGallery()
+    $gallery.innerHTML = ''
 }
 
 // Call the function to clear saved images
@@ -62,6 +66,7 @@ $dateSelectForm.addEventListener('submit',function(e){
         </div>
         `
         $overlay.classList.remove('hidden')
+
 
         const $saveBtn = document.getElementById('saveBtn')
         const $fullBtn = document.getElementById('fullBtn')
@@ -126,18 +131,6 @@ renderGallery();
 
 
 
-  // Function to clear saved images
-  function clearSavedImages() {
-    let savedImages = []; // Define an empty array
-    localStorage.setItem('savedImages', JSON.stringify(savedImages)); // Save the empty array to local storage
-    console.log("Images cleared from local storage."); // Log a message to indicate successful clearing
-}
-
-// Event listener for the delete button
-document.getElementById('deleteButton').addEventListener('click', function() {
-    clearSavedImages(); // Call the function to clear saved images when the button is clicked
-});
-
-
+  
 
 
