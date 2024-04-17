@@ -1,7 +1,5 @@
 # Report 
 
-
-
 ## Project Specifics
 - **Files Used:** 
   - index.html
